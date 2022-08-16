@@ -101,13 +101,13 @@ section {
     font-size: 22px;
     margin-bottom: 5px;
     font-weight: 300;
-    animation: FadeInUp 0.5s ease-in-out;
+    animation: fadeInUp 0.5s ease-in-out;
 }
 .section-inner h2 {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
-    animation: FadeInUp 0.5s ease-in-out 0.2s;
+    animation: fadeInUp 0.5s ease-in-out 0.2s;
     animation-fill-mode: both; /* stop from showing at start of animation. */
 }
 /* Background Images */
@@ -116,9 +116,8 @@ section {
     background-image: url(../imgs/section-a.webp);
 }
 .section-inner a {
-    animation: FadeInUp 0.5s ease-in-out 0.4s;
+    animation: fadeInUp 0.5s ease-in-out 0.4s;
     animation-fill-mode: both; /* stop from showing at start of animation. */
-
 }
 
 /* Btn */
@@ -156,10 +155,17 @@ section {
 .btn:hover .hover {
     transform: translateY(0);
 }
-
+/* Scrool arrow */
+.scroll-arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(50%);
+    animation: fadeBounce 2s infinite;
+}
 /* Animations */
 
-@keyframes FadeInUp {
+@keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(140px);
@@ -167,5 +173,20 @@ section {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeBounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    40% {
+        opacity: 1;
+        transform: translatey(0);
     }
 }
