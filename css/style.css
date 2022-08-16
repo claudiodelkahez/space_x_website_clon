@@ -321,7 +321,12 @@ footer ul li a:hover {
 .bg-falcon-9 {
     background-image: url("../imgs/falcon-9.webp");
 }
-
+.bg-falcon-heavy {
+    background-image: url("../imgs/falcon-heavy.webp");
+}
+.bg-dragon {
+    background-image: url("../imgs/dragon.webp");
+}
 .section-animate {
     animation: fadeIn 2s ease-in-out;
 }
@@ -332,6 +337,7 @@ footer ul li a:hover {
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center;
+    width: 80%;
 }
 .section-inner-center h3 {
     font-size: 100px;
@@ -414,6 +420,10 @@ footer ul li a:hover {
     .section-inner h2 {
         font-size: 40px;
     }
+   
+    .section-inner-center h3 {
+        font-size: 50px;
+    }
 
     footer ul li:first-child {
         position: absolute;
@@ -425,6 +435,13 @@ footer ul li a:hover {
     footer ul li {
         margin-right: 15px;
     }
+
+    .stats {
+        flex-direction: column;
+    }
+    .stats div {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 960px) {
@@ -434,5 +451,9 @@ footer ul li a:hover {
     }
     .mobile-only {
         display: block;
+    }
+
+    .section-inner-center h3 {
+        font-size: 75px;
     }
 }

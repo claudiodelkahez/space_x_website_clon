@@ -51,7 +51,7 @@ function countUp() {
             if (c < target) {
                 //round up and set counter value
                 counter.innerText = `${Math.ceil(c + increment)}`
-                setTimeout(updateCounter, 75)
+                setTimeout(updateCounter, 70)
             } else {
                 counter.innerText = target;
             }
