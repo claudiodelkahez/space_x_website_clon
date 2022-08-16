@@ -228,6 +228,7 @@ footer ul li a:hover {
     top: 0;
     left: 0;
     background: #fff;
+    transition: all 0.5s;
 
 }
 .hamburger-middle {
@@ -239,7 +240,7 @@ footer ul li a:hover {
 }
 /* Transition hamburger to X when open*/
 .open {
-    transform: rotate(90deg);
+    transform: rotate(-90deg)  translateX(2px);
 
 }
 .open .hamburger-top {
