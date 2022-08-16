@@ -27,13 +27,16 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100%;
-    z-index: 3;
+    height: 100px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    z-index: 3;
     text-transform: uppercase;
-    height: 100px;
     padding: 0 30px;
 }
 .logo {
@@ -338,8 +341,27 @@ footer ul li a:hover {
 
 .section-inner-center p {
     font-size: 20px;
-    animation: fadeInUp 0.5s ease-in-out .5s;
+    animation: fadeInUp 0.5s ease-in-out 0.5s;
     animation-fill-mode: both;
+}
+
+/* Stats */
+
+.stats {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+}
+.stats div span {
+    font-size: 160px;
+}
+.stats div h4 {
+    font-size: 24px;
+    font-weight: 300;
 }
 /* Animations */
 
